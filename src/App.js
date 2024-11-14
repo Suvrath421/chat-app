@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Sidebar from './components/Sidebar';
+import Home from './pages/Home';
+import Explore from './pages/Explore';
+import Threads from './pages/Threads';
+import ResponsePage from './pages/ResponsePage';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <div className="flex h-screen">
+      <Sidebar />
+      <div className="flex-1 flex flex-col">
+        <div className="flex-1 flex overflow-auto">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/explore" element={<Explore />} />
+            <Route path="/threads" element={<Threads />} />
+            <Route path="/response" element={<ResponsePage />} />
+          </Routes>
+        </div>
+      </div>
     </div>
+  </Router>
   );
 }
 
