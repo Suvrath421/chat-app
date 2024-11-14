@@ -59,10 +59,7 @@ This project is a comprehensive web application designed to help students discov
 Clone the repository into your local files and run npm install to download all the necessary packages. The run node server.js and npm start to start the localhost and node server software.
 
 ## Contributing
-Contributions are welcome! Please submit a pull request or reach out with ideas for improving the project.
-
-## License
-This project is licensed under the MIT License. See `LICENSE` for more details.
+Contributions are welcome! Please submit a pull request or reach out with ideas for improving the project. In the future, I plan to add expanded functionality to use Canvas API and MongoDB functionality to store user data in a database instead of local storage.
 
 ## Contact
 For more information, please reach out to [Suvrath] at [suvrathc@gmail.com].
